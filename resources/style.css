@@ -1,0 +1,146 @@
+*{
+    font-size: calc(6px + 0.5vw + 0.5vh + .3vmin);
+  
+}
+body{
+    /* background-color: rgb(247, 241, 232); */
+    background-color: rgb(245, 245, 245);
+    color: #111111;
+    
+}
+
+h1{
+    font-size: calc(1.25vw + 1.25vh + .05vmin);
+}
+
+#maingrid{
+    
+    
+    display: grid;
+    grid-template-areas: "header personal"
+                         "content personal"
+                         "content empty";
+    grid-template-rows: 1fr 1fr 8fr;
+    grid-template-columns: 85% 15%;
+    padding: 1vh 1vw;
+   grid-auto-flow: column dense;
+
+}
+#trainingpic{
+    width:100px;
+    height: 100px;
+    
+    }
+#educationpic{
+width:10vw;
+height: 10vh;
+
+}
+
+header{
+     grid-area: header; 
+     margin: 0 auto;
+     top: 0;
+     left:0;
+     width: 85%;
+     text-align: center;
+     position: fixed;
+     /* background-color: rgb(151, 140, 140); */
+     background-color: rgb(150, 150, 226);
+     font-size: calc(1vw + 1vh + .5vmin);
+     z-index: 2;
+    
+}
+#personal{   
+    grid-area: personal;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: calc(0.25vw + 0.25vh + .125vmin);
+    background-color: rgb(150, 150, 226);
+    opacity: 1;
+    color: blue;
+    position: fixed;
+    z-index: 3;
+    width: 17%;
+
+}
+#empty{
+    grid-area: empty;
+   
+}
+#content{
+    grid-area: content;
+    text-align: left;
+    top: 10vh;
+    position: absolute;
+    width: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: darkblue;
+
+}
+#maingrid header a:hover{
+    text-decoration: underline;
+    color: rgb(197, 166, 226);
+}
+a:hover{
+    
+    color: rgb(162, 162, 189);
+}
+#maingrid header a{
+    text-decoration: none;
+    color: rgb(168, 93, 238);
+    padding-left: 2vw;
+
+}
+
+#personal img{
+    width: 7vw;
+    height: auto;
+   border-radius: 50%;
+opacity: 0.8;
+margin: 1vh auto;
+}
+#personal figcaption{
+   
+  text-align: left; 
+  padding: 5%;
+
+}
+#personal figcaption font{
+    font-size: calc(1vw + 1vh + .99vmin);
+    color: darkblue;
+  
+  }
+
+  #greeting{
+    width: 80%;
+}
+#executivesummary{
+    width: 80%;
+
+}
+
+#skillset{  
+    width: 80%;
+
+}
+
+
+ul{
+    font-size: calc(1vw + 1vh + .5vmin);
+}
+table{
+    width: 80%;
+    font-size: calc(1vw + 1vh + .5vmin);
+    background-color: rgb(102, 102, 255);
+
+}
+table tbody,thead{
+    background-color: rgb(150, 150, 226);
+}

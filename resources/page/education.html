@@ -1,0 +1,97 @@
+<div id="educationgrid">
+    <div id="educationheader"><h1>Education</h1></div>
+    <div id="educationdesc">
+        Education July 25, 2009 BSC. In Computer Science
+        University Of Gondar, Gondar, Ethiopia                
+</div>
+    <div id="educationpic">
+        
+            <img src="" id="education" />
+        
+    </div>
+    
+    <div id="trainingheader"><h1>Training</h1></div>
+    <div id="trainingdesc">
+        June, 2014 Introduction to web development with Microsoft Visual Studio
+        Neuronet PLC, Addis Ababa, Ethiopia
+    </div>
+    <div id="trainingpic"> <img src="" id="training" />  </div>
+
+    
+    
+    <!-- <div class="leftImageButton"></div><div class="leftImageButton"></div> -->
+
+</div>
+
+<script>
+    let educationsVar = ["Degree","Transcript1","Transcript2"];
+    let trainingsVar = ["training"];
+     
+    function setImage(imgId,data){
+        console.log(data);
+    $("#" + imgId).attr("src", 'data:image/png;base64,'+data);
+}
+
+
+//let firsImg = localStorage.getItem(educationsVar[0]);
+//setImage("education",firsImg);
+
+
+
+//*************************
+function loadImageFromDb(name,url,imgId) {
+        var db2;
+        
+        var request2;
+        request2 = window.indexedDB.open("Images", 1);
+       
+       
+        request2.onsuccess = function (event) { //here store objects
+           
+            db2 = request2.result;
+            var item;
+            try {
+                var transaction2 = db2.transaction(["Image"], "readwrite");
+
+                var objectStore2 = transaction2.objectStore("Image");
+
+                item = objectStore2.get(name);
+            }
+            catch (err) {
+                loadImage(url,imgId);
+                
+            }
+            item.onsuccess = function (event) {
+                let len=0;
+                if(item.result != null){
+                    //alert(item.result);
+                }
+                else{
+                    alert("null");
+                }
+
+                var src = item.result.data;
+            //alert(plaintext);
+            $('#'+imgId).attr('src', src);
+             }
+            
+             item.onerror = function (event) {
+                loadImage(url,imgId);
+             }
+
+            
+          db2.close();
+            
+
+        };
+        request2.onerror = function (event) {
+            loadImage(url,imgId);
+        };
+
+
+
+    }
+
+    loadImageFromDb("Degree","/resources/images/education/Degree.jpg","education");
+    loadImageFromDb("training","/resources/images/training/training.jpg","training");
+</script>
