@@ -27,9 +27,16 @@
                      University Of Gondar<br />
                      <b>CGPA: 3.11</b> 
                          </p>
-                         <img onclick="showImage('edu1')" id="edu1" src="../images/certification/problem_solving.png" alt="Degree" class="image-icon" />    
+                         <img onclick="showImage('edu1')" id="edu1" src="../images/education/Degree.jpg" alt="Degree" class="image-icon" />    
+                         <img onclick="showImage('edu2')" id="edu2" src="../images/education/Transcript1.jpg" alt="Transcript Page 1" class="image-icon" />    
+                         <img onclick="showImage('edu3')" id="edu3" src="../images/education/Transcript2.jpg" alt="Transcript Page 2" class="image-icon" />    
                 </section>
-               
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+
                 <section id="Certification">
                     <h1>Certifications</h1>
                     <table class="">
@@ -41,8 +48,8 @@
                             <tr><td>Full-Stack Engineer Career Path</td><td>A 6 month online course that covers both back-end and front-end developement.</td><td>CodeCademy</td><td>March, 2021</td><td><img onclick="showImage('cert2')" id="cert2" src="../images/certification/Full_Stack.jpg" alt="Full-Stack Engineer Career Path Certificate" class="image-icon"></td></tr>
                             <tr><td>React</td><td>A 20 hours online course</td><td>CodeCademy</td><td>March,2021</td><td><img onclick="showImage('cert3')" id="cert3" src="../images/certification/react.jpg" alt="React Certificate" class="image-icon"></td></tr>
                             <tr><td>Build a Website with HTML, CSS, and Github Pages Skill Path</td><td>A 10 weeks online course that has front end topics and Github pages.</td><td>CodeCademy</td><td>March, 2021</td><td><img onclick="showImage('cert4')" id="cert4" src="../images/certification/Github.jpg" alt="Github Certificate" class="image-icon"></td></tr>
-                            <tr><td>Coding Speed Certificate</td><td>By solving problems and participating in clash of code in codingame.com</td><td>CodinGame.com</td><td>Jan, 2022</td><td><img onclick="showImage('cert5')" id="cert5" src="../images/certification/coding_speed.jpg" alt="Coding Speed Certificate(Gold level)" class="image-icon"></td></tr>
-                            <tr><td>C# certificate</td><td>An online skill assessment by codingame.com</td><td>CodinGame.com</td><td>February, 2022</td><td><img onclick="showImage('cert6')" id="cert6" src="../images/certification/C#.jpg" alt="C# Certificate" class="image-icon"></td></tr>
+                            <tr><td>Coding Speed Certificate</td><td>By solving problems and participating in clash of code in codingame.com</td><td>CodinGame.com</td><td>Feb, 2022</td><td><img onclick="showImage('cert5')" id="cert5" src="../images/certification/coding_speed.jpg" alt="Coding Speed Certificate(Gold level)" class="image-icon"></td></tr>
+                            <tr><td>C# certificate</td><td>An online skill assessment by codingame.com</td><td>CodinGame.com</td><td>February, 2022</td><td><img onclick="showImage('cert6')" id="cert6" src="../images/certification/Csharp.jpg" alt="C# Certificate" class="image-icon"></td></tr>
                             <tr><td>Javascript certificate</td><td>An online skill assessment by codingame.com</td><td>CodinGame.com</td><td>February, 2022</td><td><img onclick="showImage('cert7')" id="cert7" src="../images/certification/JavaScript.jpg" alt="Github Certificate" class="image-icon"></td></tr>
                         </tbody>
                     </table>   
@@ -121,6 +128,29 @@
         </div>
       </div> 
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Get the modal
+            showImage=imgId=>{
+              var modal = document.getElementById("myModal");
+            
+            var img = document.getElementById(imgId);
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            
+              modal.style.display = "block";
+              modalImg.src = img.src;
+              captionText.innerHTML = img.alt;
+              var span = document.getElementsByClassName("close")[0];
+            
+          
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+    
+            };
+           
+            
+            </script>
     </body> 
 </body>
 </html>
