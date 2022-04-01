@@ -5,7 +5,7 @@
 body{
     /* background-color: rgb(247, 241, 232); */
     background-color: rgb(245, 245, 245);
-    color: #111111;
+    color: rgb(102, 102, 255);
     
 }
 
@@ -138,11 +138,12 @@ ul{
 table{
     width: 80%;
     font-size: calc(1vw + 1vh + .5vmin);
-    background-color: rgb(102, 102, 255);
+    /* background-color: rgb(102, 102, 255); */
+    background-color: rgb(134, 134, 248);
 
 }
 table tbody,thead{
-    background-color: rgb(150, 150, 226);
+    background-color: rgb(188, 188, 236);
 }
 #myImg {
     border-radius: 5px;
@@ -166,13 +167,23 @@ table tbody,thead{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
+  .image-icon {
+    
+    width:200px;
+    height:200px;
+    border:1px solid;
+    border-color: rgb(102, 102, 255);
+    border-radius:15%;
+  }
   
   /* Modal Content (image) */
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 95%;
     max-width: 700px;
+    border-radius:15%;
+
   }
   
   /* Caption of Modal Image */

@@ -29,22 +29,22 @@
                     It has two parts <b>input</b> and <b>output</b><br />
                     <h1>Input</h1>
                     <b><u> Industry Data </u></b><br />
-                    An input data set that used to record commercial banks quarterly financial and non-financial performance.
+                    An input data set that is used to record commercial banks quarterly financial and non-financial performance.
                     
                      <br /><b><u>Zemen Bank Balance Sheet Items</u></b><br />
-                    An input data set that used to record Zemen bank’s quarterly actual balance sheet items performance with specified plan and strategy.
+                    An input data set that is used to record Zemen bank’s quarterly actual balance sheet items performance with specified plan and strategy.
                     
-                    <br /><b><u>Zemen Bank Statement Of Profit Or Loss And Other Comprehensive Income Items</u></b>
-                    An input data set that used to record Zemen bank’s quarterly actual profit or loss accounts performance with specified plan and strategy.
+                    <br /><b><u>Zemen Bank Statement Of Profit Or Loss And Other Comprehensive Income Items</u></b><br />
+                    An input data set that is used to record Zemen bank’s quarterly actual profit or loss accounts performance with specified plan and strategy.
                     
                     <br /><b><u>Zemen's Other Non-Financial Items</u></b><br />
-                    An input data set that used to record Zemen bank’s quarterly actual non-financial performance i.e. no  of ; Accounts, branches, staff, ATM,POS,Card holders ,internet banking users  etc. with specified  plan and strategy.
+                    An input data set that is used to record Zemen bank’s quarterly actual non-financial performance i.e. no  of ; Accounts, branches, staff, ATM,POS,Card holders ,internet banking users  etc. with specified  plan and strategy.
                     
                      <br /><b><u>Zemen Bank Loan And Advance</u></b><br />
-                    An input data set that used to record Zemen bank’s quarterly actual loan and advance with its categories   (Lone by tenure, product, economic sector and by probability of default) performance with specified plan and strategy.
+                    An input data set that is used to record Zemen bank’s quarterly actual loan and advance with its categories   (Lone by tenure, product, economic sector and by probability of default) performance with specified plan and strategy.
                     
                     <br /><b><u>Zemen Bank Foreign Exchange</u></b><br />
-                    An input data set that used to record Zemen bank’s quarterly foreign exchange inflow (by currency type and source of inflow) performance with specified plan and strategy.
+                    An input data set that is used to record Zemen bank’s quarterly foreign exchange inflow (by currency type and source of inflow) performance with specified plan and strategy.
                     
                     <h1>Out put</h1>
                     <b><u>Camel Report</u></b><br />
@@ -123,6 +123,8 @@
                     a subsystem to manage performance of the staffs to award them annual increment and bonus.
                     
                   </p>
+                  <img onclick="showImage('hris1')" id="hris1" src="../images/emails/hris_1.jpg" alt="Email1" class="image-icon">
+
                 </section>
                 <video width="90%" controls>
                     <source src="../videos/HRIS.webm" type="video/webm">
@@ -155,13 +157,16 @@ authorize or discard new users.<br />
 related data. This account can also register and view margin facility related data.<br />
 <b>Viewer</b> : Is a credit department account with only view privilege.
                   </p>
+
                 </section>
                 <video width="90%" controls>
                     <source src="../videos/IMPORT.webm" type="video/webm">
                     <source src="../videos/IMPORT.mp4" type="video/mp4">
                     <p>Your browser doesn't support HTML5 video. Here is
                        <a href="../videos/IMPORT.mp4">link to the video</a> instead.</p>
-                  </video><br /><br />
+                  </video><br />
+                  <img onclick="showImage('import1')" id="import1" src="../images/emails/import_email1.jpg" alt="Email1" class="image-icon">
+                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
              <!-- hitwebcounter Code START -->
 <a href="https://www.hitwebcounter.com" target="_blank">
   <img src="https://hitwebcounter.com/counter/counter.php?page=7962305&style=0005&nbdigits=6&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" />
@@ -190,7 +195,6 @@ related data. This account can also register and view margin facility related da
         <script>
           // Get the modal
           showImage=imgId=>{
-            alert("Test git push");
             var modal = document.getElementById("myModal");
           
           var img = document.getElementById(imgId);
@@ -198,16 +202,17 @@ related data. This account can also register and view margin facility related da
           var captionText = document.getElementById("caption");
           
             modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-  
-          };
-          var span = document.getElementsByClassName("close")[0];
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+            var span = document.getElementsByClassName("close")[0];
           
         
           span.onclick = function() { 
             modal.style.display = "none";
           }
+  
+          };
+         
           
           </script>
     </body> 
