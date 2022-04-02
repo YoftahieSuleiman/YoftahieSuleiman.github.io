@@ -4,8 +4,8 @@
 }
 body{
     /* background-color: rgb(247, 241, 232); */
-    background-color: rgb(245, 245, 245);
-    color: rgb(102, 102, 255);
+    background-color: rgb(8, 0, 0);
+    color: rgb(154, 154, 250);
     
 }
 
@@ -45,8 +45,9 @@ header{
      width: 85%;
      text-align: center;
      position: fixed;
-     /* background-color: rgb(151, 140, 140); */
-     background-color: rgb(150, 150, 226);
+     background-color: rgb(8, 0, 0);
+    
+     background-size: cover;
      font-size: calc(1vw + 1vh + .5vmin);
      z-index: 2;
     
@@ -59,9 +60,11 @@ header{
     margin-right: 0;
     text-align: center;
     font-size: calc(0.25vw + 0.25vh + .125vmin);
-    background-color: rgb(150, 150, 226);
+    background-image: url(../resources/images/background/bg2.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.95);
+    background-size: cover;
     opacity: 1;
-    color: blue;
+    color:  rgb(115, 115, 243);
     position: fixed;
     z-index: 3;
     width: 17%;
@@ -81,7 +84,7 @@ header{
 
 a{
     text-decoration: none;
-    color: darkblue;
+    color: rgb(62, 62, 163);
 
 }
 #maingrid header a:hover{
@@ -114,7 +117,7 @@ margin: 1vh auto;
 }
 #personal figcaption font{
     font-size: calc(1vw + 1vh + .99vmin);
-    color: darkblue;
+    color: rgb(79, 79, 172);
   
   }
 
@@ -138,12 +141,17 @@ ul{
 table{
     width: 80%;
     font-size: calc(1vw + 1vh + .5vmin);
-    /* background-color: rgb(102, 102, 255); */
-    background-color: rgb(134, 134, 248);
+    /* background-color: rgb(102, 102, 255);
+    background-color: rgb(134, 134, 248); */
+    
+    background-image: url(../resources/images/background/bg1.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 8, 0.85);
+    background-size: cover;
+    border: 0.5em;
 
 }
-table tbody,thead{
-    background-color: rgb(188, 188, 236);
+table tbody,thead,tr{
+  border: 0.5em;
 }
 #myImg {
     border-radius: 5px;
