@@ -6,7 +6,7 @@ body{
     /* background-color: rgb(247, 241, 232); */
     background-image: url(../resources/images/background/bg.jpg);
     background-repeat: repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.95);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.99);
     color: rgb(154, 154, 250);
     
 }
