@@ -89,14 +89,16 @@ a{
     color: rgb(62, 62, 163);
 
 }
+a:hover{
+    
+  color: rgb(162, 162, 189);
+}
+
 #maingrid header a:hover{
     text-decoration: underline;
     color: rgb(197, 166, 226);
 }
-a:hover{
-    
-    color: rgb(162, 162, 189);
-}
+
 #maingrid header a{
     text-decoration: none;
     color: rgb(168, 93, 238);
